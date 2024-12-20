@@ -2,9 +2,14 @@ import SwiftUI
 import SwiftData
 @main
 struct matizApp: App {
+    @AppStorage("isRegistered") private var isRegistered: Bool = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isRegistered{
+                ContentView()
+            }else{
+                registrationView()
+            }
         }
         .modelContainer(for:DataItem.self)
     }
