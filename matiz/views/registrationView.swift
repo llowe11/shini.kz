@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct registrationView: View {
-    // todo: fix registration view
     @AppStorage("isRegistered") private var isRegistered: Bool = false
     @State private var login:String = ""
     @State private var password:String = ""
@@ -15,11 +14,7 @@ struct registrationView: View {
                 .autocapitalization(.none)
             HStack{
                 Button {
-                    func register(){
-                        if login == "test" && password == "test"{
-                            isRegistered = true
-                        }
-                    }
+                    register()
                 } label: {
                     Text("submit")
                         .foregroundStyle(Color.black)
@@ -28,6 +23,11 @@ struct registrationView: View {
 
             }
         }.padding()
+    }
+    private func register(){
+        if login == "test" && password == "test"{
+            isRegistered = true
+        }
     }
 }
 
