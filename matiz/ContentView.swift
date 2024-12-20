@@ -3,7 +3,12 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) private var context
     var body: some View {
-        Text("test")
+        TabView{
+            homescreen()
+                .tabItem {
+                    Label("homepage",systemImage: "house.fill")
+                }
+        }
     }
 }
 
