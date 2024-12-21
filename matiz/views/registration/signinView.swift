@@ -11,19 +11,30 @@ struct signinView: View {
                 .padding()
                 .border(Color.black, width: 1)
                 .autocapitalization(.none)
+                .autocorrectionDisabled()
             TextField("password", text: $password)
                 .padding()
                 .border(Color.black, width: 1)
                 .autocapitalization(.none)
-            HStack{
+                .autocorrectionDisabled()
+            VStack{
                 Button {
                     register()
                 } label: {
-                    Text("submit")
+                    Text("sign in")
                         .padding()
                         .foregroundStyle(Color.black)
                         .border(Color.black, width: 1)
                 }
+                Spacer()
+                    .frame(height: 30)
+                Button {
+                    goToSignUp()
+                } label: {
+                    Text("go back")
+                        .foregroundStyle(Color.black)
+                }
+
 
             }
         }.padding()
@@ -32,6 +43,9 @@ struct signinView: View {
         if login == "test" && password == "test"{
             isRegistered = true
         }
+    }
+    private func goToSignUp() {
+        isLoggedIn = false
     }
 }
 
