@@ -2,6 +2,7 @@ import SwiftUI
 
 struct signinView: View {
     @AppStorage("isRegistered") private var isRegistered: Bool = false
+    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
     @State private var login:String = ""
     @State private var password:String = ""
     var body: some View {
