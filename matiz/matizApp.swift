@@ -1,5 +1,7 @@
 import SwiftUI
 import SwiftData
+
+
 @main
 struct matizApp: App {
     @AppStorage("isRegistered") private var isRegistered: Bool = false
@@ -11,6 +13,6 @@ struct matizApp: App {
                 registrationView()
             }
         }
-        .modelContainer(for:DataItem.self)
+        .modelContainer(for: [UserLogin.self])
     }
 }
