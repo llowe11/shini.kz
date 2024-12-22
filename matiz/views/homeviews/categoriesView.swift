@@ -2,7 +2,11 @@ import SwiftUI
 
 struct categoriesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Rectangle()
+            .padding(.horizontal,23)
+            .cornerRadius(20)
+            .frame(height: 250)
+            .clipped()
     }
 }
 

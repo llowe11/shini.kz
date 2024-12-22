@@ -2,11 +2,23 @@ import SwiftUI
 
 struct homescreen: View {
     var body: some View {
-        VStack{
-            headerView()//todo:position
-            Text("this is homescreen")
+            ZStack(alignment: .top) {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        addsView()
+                        
+                        categoriesView()
+                        
+                        carfeedView()
+                        
+                    }
+                    .padding(.top, 115)
+                }.scrollIndicators(.never)
+                
+                headerView()
+            }
+            .edgesIgnoringSafeArea(.top)
         }
-    }
 }
 
 #Preview {
