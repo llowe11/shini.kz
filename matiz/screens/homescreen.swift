@@ -4,7 +4,7 @@ struct homescreen: View {
     var body: some View {
         VStack{
             headerView()
-            Text("homescreen")
+            Text("there is homescreen")
         }
     }
 }
