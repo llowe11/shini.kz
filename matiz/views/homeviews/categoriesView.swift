@@ -2,9 +2,9 @@ import SwiftUI
 
 struct categoriesView: View {
     var body: some View {
-        Rectangle()
-            .padding(.horizontal,23)
-            .cornerRadius(20)
+        RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.gray,lineWidth: 2)
+            .padding(.horizontal,20)
             .frame(height: 250)
             .clipped()
     }

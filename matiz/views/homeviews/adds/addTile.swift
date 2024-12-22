@@ -2,9 +2,10 @@ import SwiftUI
 
 struct addTile: View {
     var body: some View {
-        Rectangle()
+        RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.gray, lineWidth: 2)
             .frame(width: 100,height: 100)
-            .cornerRadius(20)
+
     }
 }
 
