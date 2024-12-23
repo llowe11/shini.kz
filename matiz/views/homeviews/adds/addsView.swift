@@ -8,6 +8,9 @@ struct addsView: View {
                 addTile()
                 addTile()
                 addTile()
+                addTile()
+                addTile()
+                addTile()
             }
         }.scrollIndicators(.hidden)
             .padding(.leading)

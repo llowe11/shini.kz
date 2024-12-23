@@ -3,7 +3,7 @@ import SwiftUI
 struct headerView: View {
     var body: some View {
         HStack{
-            Text("Matiz")
+            Text("matiz")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
