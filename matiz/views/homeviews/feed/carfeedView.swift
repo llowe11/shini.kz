@@ -2,15 +2,15 @@ import SwiftUI
 
 struct carfeedView: View {
     var body: some View {
-            VStack {
-                ForEach(carsArray, id: \.name) { car in
-                    carTile(car: car)
-                        .padding(.bottom, 10)
-                }
+        VStack {
+            ForEach(carsArray, id: \.id){car in
+                carTile(car: car)
+                    .padding(.bottom, 3)
             }
-            .padding()
         }
+    }
 }
+
 
 #Preview {
     carfeedView()

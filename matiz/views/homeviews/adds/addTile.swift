@@ -9,6 +9,3 @@ struct addTile: View {
     }
 }
 
-#Preview {
-    addTile()
-}
