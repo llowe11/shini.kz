@@ -7,13 +7,29 @@ struct carTile: View {
             .stroke(Color.gray, lineWidth: 1)
             .frame(height: 190)
             .overlay(
-                VStack{
-                    Text(car.brand)
-                    Text(car.name)
-                    Text(car.mileAge)
-                }.padding(10)
+                HStack{
+                    VStack{
+                        Text(car.brand)
+                        Text(car.name)
+                        Text(car.mileAge)
+                    }.padding(10)
+                    Spacer().frame(width: 200)
+                    Button {
+                        addToFavourites()
+                    } label: {
+                        if !car.isFavorite{
+                            Image(systemName: "heart")
+                        }else{
+                            Image(systemName: "heart.fill")
+                        }
+                    }
+
+                }
             )
-            
+    }
+    
+    func addToFavourites () {
+        car.isFavorite = true
     }
 }
 

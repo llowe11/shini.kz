@@ -4,7 +4,7 @@ struct homescreen: View {
     var body: some View {
             ZStack(alignment: .top) {
                 ScrollView {
-                    VStack(spacing: 5) {
+                    VStack(spacing: 0) {
                         addsView()
                         
                         categoriesView()

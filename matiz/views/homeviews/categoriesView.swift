@@ -15,7 +15,7 @@ struct categoriesView: View {
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(0..<8) { _ in
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.gray, lineWidth: 1)
+                            .stroke(Color.gray, lineWidth: 2)
                             .aspectRatio(0.9, contentMode: .fit)
                     }
                 }
