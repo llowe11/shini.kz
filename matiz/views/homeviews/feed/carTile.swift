@@ -17,11 +17,8 @@ struct carTile: View {
                     Button {
                         addToFavourites()
                     } label: {
-                        if !car.isFavorite{
-                            Image(systemName: "heart")
-                        }else{
-                            Image(systemName: "heart.fill")
-                        }
+                        Image(systemName: car.isFavorite ? "heart.fill" : "heart")
+                            .foregroundColor(car.isFavorite ? .black : .gray).font(.title2)
                     }
 
                 }
@@ -29,7 +26,7 @@ struct carTile: View {
     }
     
     func addToFavourites () {
-        car.isFavorite = true
+        car.isFavorite.toggle()
     }
 }
 
