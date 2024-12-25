@@ -16,7 +16,7 @@ struct categoriesView: View {
                     ForEach(0..<8) { _ in
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.gray, lineWidth: 1)
-                            .aspectRatio(0.9, contentMode: .fit) // Slightly taller tiles
+                            .aspectRatio(0.9, contentMode: .fit)
                     }
                 }
                 .padding(5)
