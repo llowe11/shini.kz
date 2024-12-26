@@ -1,11 +1,7 @@
 import SwiftUI
 
-struct favouritesscreen: View {
+struct favouritesScreen: View {
     var body: some View {
-        Text("favourites")
+        Text("Favourites")
     }
-}
-
-#Preview {
-    favouritesscreen()
 }

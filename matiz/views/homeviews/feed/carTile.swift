@@ -9,11 +9,14 @@ struct carTile: View {
             .overlay(
                 HStack{
                     VStack{
-                        Text(car.brand)
-                        Text(car.name)
+                        HStack{
+                            Text(car.brand)
+                            Text(car.name)
+                        }
                         Text(car.mileAge)
                     }.padding(10)
-                    Spacer().frame(width: 200)
+                        
+                    Spacer().frame(width: 180)
                     Button {
                         addToFavourites()
                     } label: {

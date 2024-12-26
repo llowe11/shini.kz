@@ -8,7 +8,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("homepage",systemImage: "house.fill")
                 }
-            favouritesscreen()
+            favouritesScreen()
                 .tabItem {
                     Label("favourites",systemImage: "heart")
                 }

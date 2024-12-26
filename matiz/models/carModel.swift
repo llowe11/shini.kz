@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 @Model
-class carModel{
+class carModel: Identifiable{
     var id = UUID()
     var brand:String
     var name:String
