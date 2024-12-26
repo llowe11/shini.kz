@@ -16,7 +16,7 @@ struct carTile: View {
                         Text(car.mileAge)
                     }.padding(10)
                         
-                    Spacer().frame(width: 180)
+                    Spacer()
                     Button {
                         addToFavourites()
                     } label: {
