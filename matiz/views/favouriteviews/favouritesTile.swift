@@ -15,7 +15,6 @@ struct favouritesTile: View {
                     Text(car.mileAge)
                         .font(.footnote)
                 }
-                .padding()
             )
     }
 }

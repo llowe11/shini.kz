@@ -12,7 +12,6 @@ struct favouritesView: View {
                     favouritesTile(car: car)
                 }
             }
-            .padding()
         }
     }
 }
