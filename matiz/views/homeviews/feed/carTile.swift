@@ -30,13 +30,6 @@ struct carTile: View {
     
     func addToFavourites() {
             car.isFavorite.toggle()
-            if car.isFavorite {
-                if !favCarsArr.contains(where: { $0.id == car.id }) {
-                    favCarsArr.append(car)
-                }
-            } else {
-                favCarsArr.removeAll(where: { $0.id == car.id })
-            }
         }
 }
 
