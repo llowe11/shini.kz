@@ -1,12 +1,18 @@
 import SwiftUI
 
-//todo: fix bug with not all the elements are being pushed into the fav array
 struct favouritesView: View {
-    var body: some View {
-        Text("text")
+    var favoriteCars: [carModel] {
+        carsArray.filter { $0.isFavorite }
     }
-}
 
-#Preview {
-    favouritesView()
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 16) {
+                ForEach(favoriteCars, id: \.name) { car in
+                    favouritesTile(car: car)
+                }
+            }
+            .padding()
+        }
+    }
 }
