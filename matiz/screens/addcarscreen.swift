@@ -5,7 +5,3 @@ struct addcarscreen: View {
         Text("add car")
     }
 }
-
-#Preview {
-    addcarscreen()
-}
