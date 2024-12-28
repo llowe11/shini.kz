@@ -2,7 +2,7 @@ import SwiftUI
 
 struct messagesscreen: View {
     var body: some View {
-        Text("chats")
+        Text("coming soon...")
     }
 }
 

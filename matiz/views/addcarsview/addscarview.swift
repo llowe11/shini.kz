@@ -1,11 +1,15 @@
 import SwiftUI
 
 struct addscarview: View {
+    @State private var text: String = "test"
     var body: some View {
-        Text("test")
+        VStack{
+            TextField("test",text: $text)
+            TextField("test",text: $text)
+            TextField("test",text: $text)
+            TextField("test",text: $text)
+            TextField("test",text: $text)
+        }
     }
 }
 
-#Preview {
-    addscarview()
-}
