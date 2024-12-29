@@ -18,7 +18,7 @@ struct ContentView: View {
                 }
             messagesscreen()
                 .tabItem {
-                    Label("chats",systemImage: "message")
+                    Label("message",systemImage: "message")
                 }
             profilescreen()
                 .tabItem {
