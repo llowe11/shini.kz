@@ -6,6 +6,7 @@ import SwiftUI
 struct carView: View {
     var body: some View {
         Text("car name")
+        Text("car brand")
     }
 }
 
