@@ -1,5 +1,5 @@
 import SwiftUI
-
+import SwiftData 
 
 struct carView: View {
     var body: some View {
@@ -10,6 +10,3 @@ struct carView: View {
     }
 }
 
-#Preview {
-    carView()
-}

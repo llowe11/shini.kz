@@ -9,7 +9,7 @@ struct favouritesView: View {
         ScrollView {
             VStack(spacing: 16) {
                 ForEach(favoriteCars, id: \.name) { car in
-                    favouritesTile(car: car)
+                    carTile(car: car)
                 }
             }
         }
