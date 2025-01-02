@@ -4,13 +4,14 @@ import SwiftData
 @Model
 class carModel {
     var id = UUID()
-    var brand:String
-    var name:String
+    var brand: String
+    var name: String
     var date: String
     var mileAge: String
-    var carImg : String
-    var isFavorite : Bool
-    init(id: UUID = UUID(), brand: String, name: String, date: String, mileAge: String, carImg:String, isFavorite:Bool) {
+    var carImg: String
+    var isFavorite: Bool
+    var carprice: String
+    init(id: UUID = UUID(), brand: String, name: String, date: String, mileAge: String, carImg: String, isFavorite: Bool, carprice: String) {
         self.id = id
         self.brand = brand
         self.name = name
@@ -18,5 +19,6 @@ class carModel {
         self.mileAge = mileAge
         self.carImg = carImg
         self.isFavorite = isFavorite
+        self.carprice = carprice
     }
 }

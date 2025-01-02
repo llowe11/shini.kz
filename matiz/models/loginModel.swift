@@ -10,7 +10,6 @@ class UserLogin {
     var surname: String
     var birthDate: String
     var gender:String
-    
     init(login: String, password: String, name: String, surname: String, birthDate: String, gender: String) {
         self.login = login
         self.password = password

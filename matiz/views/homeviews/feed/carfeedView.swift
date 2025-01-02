@@ -11,7 +11,3 @@ struct carfeedView: View {
     }
 }
 
-
-#Preview {
-    carfeedView()
-}
