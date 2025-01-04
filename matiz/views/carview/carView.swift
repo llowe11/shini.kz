@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData 
 
 struct carView: View {
+    //todo: styles car view
     var car: carModel
     var body: some View {
         ZStack{
