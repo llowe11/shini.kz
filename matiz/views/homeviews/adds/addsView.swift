@@ -9,7 +9,7 @@ struct addsView: View {
                 }
             }
         }.scrollIndicators(.hidden)
-            .padding(.leading)
+            .padding(.leading,10)
             
     }
 }

@@ -3,6 +3,7 @@ import SwiftUI
 struct carTile: View {
     @State var car: carModel
     var body: some View {
+        let imageURL = URL(string: car.carImg)
         NavigationLink(destination: carView(car:car)){
             Rectangle()
                 .stroke(Color.gray, lineWidth: 1)
@@ -10,6 +11,27 @@ struct carTile: View {
                 .overlay(
                     HStack{
                         VStack{
+                            AsyncImage(url: imageURL) { phase in
+                                switch phase {
+                                case .empty:
+                                    ProgressView()
+                                        .frame(width: 200, height: 200)
+                                case .success(let image):
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 100)
+                                        .cornerRadius(12)
+                                case .failure:
+                                    Image(systemName: "photo")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 200, height: 200)
+                                        .foregroundColor(.gray)
+                                @unknown default:
+                                    EmptyView()
+                                }
+                            }
                             HStack{
                                 Text(car.brand)
                                 Text(car.name)
