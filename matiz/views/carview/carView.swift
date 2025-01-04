@@ -6,10 +6,13 @@ struct carView: View {
     var car: carModel
     var body: some View {
         ZStack{
-            Text(car.carImg)
-            HStack{
-                Text(car.name)
-                Text(car.brand)
+            VStack{
+                Text(car.carImg)
+                HStack{
+                    Text(car.name)
+                    Text(car.brand)
+                }
+                Text(car.carprice)
             }
         }
     }
