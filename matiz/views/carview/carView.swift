@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData 
 
 struct carView: View {
+    //todo: edit car view
     var car: carModel
     var body: some View {
         let imageURL = URL(string: car.carImg)
