@@ -32,10 +32,10 @@ struct carView: View {
                 Rectangle()
                     .frame(width: .infinity, height: 250)
                 HStack {
-                    Text(car.name)
                     Text(car.brand)
+                    Text(car.name)
                 }
-                Text(car.carprice)
+                Text("\(car.carprice) $")
                 Button {
                     calculateLoan()
                 } label: {
