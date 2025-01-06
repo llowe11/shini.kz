@@ -1,34 +1,37 @@
 import SwiftUI
-import SwiftData 
+import SwiftData
 
 struct carView: View {
     var car: carModel
     var body: some View {
         let imageURL = URL(string: car.carImg)
-        ZStack{
-            VStack{
-                AsyncImage(url: imageURL) { phase in
-                    switch phase {
-                    case .empty:
-                        ProgressView()
-                            .frame(width: 200, height: 200)
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 200, height: 200)
-                            .cornerRadius(12)
-                    case .failure:
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 200, height: 200)
-                            .foregroundColor(.gray)
-                    @unknown default:
-                        EmptyView()
-                    }
-                }
-                HStack{
+        
+        ScrollView{
+            VStack(alignment: .leading, spacing: 16) {
+                // AsyncImage(url: imageURL) { phase in
+                //     switch phase {
+                //     case .empty:
+                //         ProgressView()
+                //             .frame(width: 200, height: 200)
+                //     case .success(let image):
+                //         image
+                //             .resizable()
+                //             .scaledToFit()
+                //             .frame(width: 200, height: 200)
+                //             .cornerRadius(12)
+                //     case .failure:
+                //         Image(systemName: "photo")
+                //             .resizable()
+                //             .scaledToFit()
+                //             .frame(width: 200, height: 200)
+                //             .foregroundColor(.gray)
+                //     @unknown default:
+                //         EmptyView()
+                //     }
+                // }
+                Rectangle()
+                    .frame(width: .infinity, height: 250)
+                HStack {
                     Text(car.name)
                     Text(car.brand)
                 }
@@ -38,13 +41,14 @@ struct carView: View {
                 } label: {
                     Text("Расчитать кредит")
                 }
+                Spacer()
             }
-        }
-        
+
+        }.padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
-    func calculateLoan(){
+    
+    func calculateLoan() {
         return
     }
-
 }
-

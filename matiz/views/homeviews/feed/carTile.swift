@@ -6,7 +6,7 @@ struct carTile: View {
         NavigationLink(destination: carView(car:car)){
             Rectangle()
                 .stroke(Color.gray, lineWidth: 1)
-                .frame(height: 190)
+                .frame(height: 255)
                 .overlay(
                     HStack{
                         VStack{
