@@ -34,12 +34,17 @@ struct carView: View {
                 }
                 Text(car.carprice)
                 Button {
-                    return
+                    calculateLoan()
                 } label: {
                     Text("Расчитать кредит")
                 }
             }
         }
+        
     }
+    func calculateLoan(){
+        return
+    }
+
 }
 
