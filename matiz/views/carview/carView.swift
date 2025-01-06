@@ -33,6 +33,11 @@ struct carView: View {
                     Text(car.brand)
                 }
                 Text(car.carprice)
+                Button {
+                    return
+                } label: {
+                    Text("Расчитать кредит")
+                }
             }
         }
     }
