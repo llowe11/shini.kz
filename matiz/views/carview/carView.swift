@@ -4,7 +4,7 @@ import SwiftData
 struct carView: View {
     var car: carModel
     var body: some View {
-        let imageURL = URL(string: car.carImg)
+//        let imageURL = URL(string: car.carImg)
         
         ScrollView{
             VStack(alignment: .leading, spacing: 16) {
