@@ -31,17 +31,32 @@ struct carView: View {
                 // }
                 Rectangle()
                     .frame(width: .infinity, height: 250)
+                    .foregroundStyle(Color.gray)
+                    .padding(.bottom, 20)
                 HStack {
                     Text(car.brand)
+                        .font(.title2)
                     Text(car.name)
+                        .font(.title2)
                 }
                 Text("\(car.carprice) $")
+                    .font(.title3)
+                Divider()
+                    .padding(.bottom,20)
                 Button {
                     calculateLoan()
                 } label: {
-                    Text("Расчитать кредит")
+                    RoundedRectangle(cornerRadius: 15)
+                        .overlay{
+                            Text("Расчитать кредит")
+                                .foregroundStyle(Color.white)
+                                .font(.title3)
+                                
+                        }
                 }
-                Spacer()
+                .frame(height: 50)
+                .foregroundStyle(Color.gray)
+                
             }
 
         }.padding()

@@ -14,7 +14,6 @@ struct carTile: View {
                                 Text(car.brand)
                                 Text(car.name)
                             }
-                            Text(car.mileAge)
                         }.padding(10)
                             
                         Spacer()

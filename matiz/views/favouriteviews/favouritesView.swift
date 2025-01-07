@@ -6,12 +6,16 @@ struct favouritesView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                ForEach(favoriteCars, id: \.name) { car in
-                    carTile(car: car)
+        ZStack(alignment: .top){
+            ScrollView {
+                VStack(spacing: 10) {
+                    Spacer().frame(height:100)
+                    ForEach(favoriteCars, id: \.name) { car in
+                        carTile(car: car)
+                    }
                 }
             }
-        }
+            favouritesheaderView()
+        }.edgesIgnoringSafeArea(.top)
     }
 }
