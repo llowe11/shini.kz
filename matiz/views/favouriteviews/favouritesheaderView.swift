@@ -7,7 +7,7 @@ struct favouritesheaderView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-                .frame(width: 180)
+                .frame(width: 187)
             
             Text("")
                 
