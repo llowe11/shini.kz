@@ -53,7 +53,8 @@ struct carView: View {
                         }
                 }
                 .frame(height: 50)
-                .foregroundStyle(Color.gray)
+                .foregroundStyle(Color.red)
+                .opacity(0.8)
             }
         }
         .padding()

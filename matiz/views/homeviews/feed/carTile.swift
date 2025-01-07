@@ -21,7 +21,8 @@ struct carTile: View {
                             addToFavourites()
                         } label: {
                             Image(systemName: car.isFavorite ? "heart.fill" : "heart")
-                                .foregroundColor(car.isFavorite ? .black : .gray).font(.title2)
+                                .foregroundColor(car.isFavorite ? .red : .gray).font(.title2)
+                                .opacity(0.8)
                         }
 
                     }
