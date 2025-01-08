@@ -43,12 +43,14 @@ struct carView: View {
                     .padding(.bottom, 20)
                 
                 VStack{
-                    Text("Описание: ")
-                        .font(.title2)
                     Text(car.cardescription)
                         .font(.body)
+                        .frame(maxWidth: .infinity, alignment: .leading) 
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(nil)
+                        .padding(.horizontal, 5)
+                        
                 }
-                
                 Button {
                     calculateLoan()
                 } label: {
