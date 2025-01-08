@@ -45,9 +45,6 @@ struct carView: View {
                 VStack{
                     Text(car.cardescription)
                         .font(.body)
-                        .frame(maxWidth: .infinity, alignment: .leading) 
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(nil)
                         .padding(.horizontal, 5)
                         
                 }
