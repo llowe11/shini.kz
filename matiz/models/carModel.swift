@@ -11,7 +11,8 @@ class carModel {
     var carImg: String
     var isFavorite: Bool
     var carprice: String
-    init(id: UUID = UUID(), brand: String, name: String, date: String, mileAge: String, carImg: String, isFavorite: Bool, carprice: String) {
+    var cardescription: String
+    init(id: UUID = UUID(), brand: String, name: String, date: String, mileAge: String, carImg: String, isFavorite: Bool, carprice: String, cardescription:String) {
         self.id = id
         self.brand = brand
         self.name = name
@@ -20,5 +21,6 @@ class carModel {
         self.carImg = carImg
         self.isFavorite = isFavorite
         self.carprice = carprice
+        self.cardescription = cardescription
     }
 }

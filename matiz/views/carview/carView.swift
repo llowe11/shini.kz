@@ -42,6 +42,13 @@ struct carView: View {
                 Divider()
                     .padding(.bottom, 20)
                 
+                VStack{
+                    Text("Описание: ")
+                        .font(.title2)
+                    Text(car.cardescription)
+                        .font(.body)
+                }
+                
                 Button {
                     calculateLoan()
                 } label: {
