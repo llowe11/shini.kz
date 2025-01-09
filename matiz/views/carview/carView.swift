@@ -48,6 +48,9 @@ struct carView: View {
                         .padding(.horizontal, 5)
                         
                 }
+                Divider()
+                    .padding(.vertical, 20)
+                
                 Button {
                     calculateLoan()
                 } label: {
