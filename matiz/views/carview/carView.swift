@@ -3,6 +3,7 @@ import SwiftData
 
 struct carView: View {
     var car: carModel
+    @State var loanDuration: Int
     var body: some View {
         let imageURL = URL(string: car.carImg)
         
