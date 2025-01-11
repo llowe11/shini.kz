@@ -16,7 +16,7 @@ struct categoriesView: View {
                     ForEach(0..<8) { _ in
                         ZStack(alignment: .topLeading) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.blue.opacity(0.2))
+                                .fill(Color.blue.opacity(0.12))
                                 .aspectRatio(0.9, contentMode: .fit)
                             
                             VStack {
