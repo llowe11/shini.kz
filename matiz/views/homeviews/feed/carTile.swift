@@ -12,6 +12,11 @@ struct carTile: View {
                         VStack{
                             cartileText(car:car)
                                 .padding(.horizontal,10)
+                            HStack{
+                                Text("\(car.carprice) $")
+                                    
+                                Spacer()
+                            }.padding(.leading, 21)
                             
                             HStack{
                                 AsyncImage(url: imageURL) { phase in
@@ -36,7 +41,7 @@ struct carTile: View {
                                     }
                                 }.padding(.horizontal)
                                 Spacer()
-                                Text("descriptoion")
+                                Text("cool car description")
                                     .padding(.horizontal)
                             }
                         }

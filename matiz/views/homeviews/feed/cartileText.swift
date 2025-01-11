@@ -12,6 +12,7 @@ struct cartileText: View {
                 }
                 .foregroundStyle(Color.blue.opacity(0.6))
                 .bold()
+                .font(.title3)
             }.padding(10)
                 
             Spacer()

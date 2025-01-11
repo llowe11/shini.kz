@@ -40,17 +40,7 @@ struct carView: View {
                 Text("\(car.carprice) $")
                     .font(.title3)
                 Divider()
-                    .padding(.bottom, 20)
-                
-                VStack{
-                    Text(car.cardescription)
-                        .font(.body)
-                        .padding(.horizontal, 5)
-                        
-                }
-                Divider()
-                    .padding(.vertical, 20)
-                
+
                 Button {
                     calculateLoan()
                 } label: {
@@ -63,8 +53,10 @@ struct carView: View {
                 }
                 .frame(height: 50)
                 .foregroundStyle(Color.red)
-                .opacity(0.8)
                 .padding(.top,30)
+                
+                
+                
             }
         }
         .padding()
