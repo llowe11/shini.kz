@@ -13,6 +13,6 @@ struct matizApp: App {
                 registrationView()
             }
         }
-        .modelContainer(for: [UserLogin.self,carModel.self])
+        .modelContainer(for: [UserLogin.self,carModel.self,CategoriesModel.self,addModel.self])
     }
 }

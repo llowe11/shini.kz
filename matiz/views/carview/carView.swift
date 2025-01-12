@@ -12,24 +12,28 @@ struct carView: View {
                     switch phase {
                     case .empty:
                         ProgressView()
-                            .frame(width: .infinity, height: 250)
+                            .frame(height: 250)
+                            .frame(maxWidth: .infinity)
                     case .success(let image):
                         image
                             .resizable()
-                            .scaledToFit()
-                            .frame(width: .infinity, height: 250)
-                            .cornerRadius(12)
+                            .scaledToFill()
+                            .frame(height: 250)
+                            .frame(maxWidth: .infinity)
+                            .clipped()
                     case .failure:
                         Image(systemName: "photo")
                             .resizable()
-                            .scaledToFit()
-                            .frame(width: .infinity, height: 250)
+                            .scaledToFill()
+                            .frame(height: 250)
+                            .frame(maxWidth: .infinity)
                             .foregroundColor(.gray)
+                            .clipped()
                     @unknown default:
                         EmptyView()
                     }
                 }
-                .padding(.bottom, 20)
+                .ignoresSafeArea(edges: .horizontal)
                 
                 HStack {
                     Text(car.brand)
@@ -54,12 +58,9 @@ struct carView: View {
                 .frame(height: 50)
                 .foregroundStyle(Color.red)
                 .padding(.top,30)
-                
-                
-                
             }
         }
-        .padding()
+        .padding(.horizontal)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
     
@@ -67,4 +68,3 @@ struct carView: View {
         return
     }
 }
-

@@ -23,7 +23,7 @@ struct carTile: View {
                                     switch phase {
                                     case .empty:
                                         ProgressView()
-                                            .frame(width: .infinity, height: 150)
+                                            .frame(width: .infinity, height: 100)
                                     case .success(let image):
                                         image
                                             .resizable()
@@ -34,7 +34,7 @@ struct carTile: View {
                                         Image(systemName: "photo")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: .infinity, height: 250)
+                                            .frame(width: .infinity, height: 150)
                                             .foregroundColor(.gray)
                                     @unknown default:
                                         EmptyView()
