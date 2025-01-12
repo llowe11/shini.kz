@@ -20,7 +20,7 @@ struct cartileText: View {
                 addToFavourites()
             } label: {
                 Image(systemName: car.isFavorite ? "heart.fill" : "heart")
-                    .foregroundColor(car.isFavorite ? .blue.opacity(0.6) : .blue).font(.title2)
+                    .foregroundColor(car.isFavorite ? .red.opacity(0.9) : .blue).font(.title2)
                     .opacity(0.8)
             }
 

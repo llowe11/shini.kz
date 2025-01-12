@@ -6,44 +6,30 @@ struct carTile: View {
         let imageURL = URL(string: car.carImg)
             NavigationLink(destination: carView(car:car)){
                 Rectangle()
-                    .stroke(Color.gray, lineWidth: 1)
-                    .frame(height: 255)
+                    .stroke(Color.gray, lineWidth: 0)
+                    .frame(height: 290)
                     .overlay(
                         VStack{
                             cartileText(car:car)
                                 .padding(.horizontal,10)
+                                .padding(.top)
                             HStack{
-                                Text("\(car.carprice) $")
-                                    
+                                Text("\(car.carprice)")
                                 Spacer()
                             }.padding(.leading, 21)
                             
-                            HStack{
-                                AsyncImage(url: imageURL) { phase in
-                                    switch phase {
-                                    case .empty:
-                                        ProgressView()
-                                            .frame(width: .infinity, height: 100)
-                                    case .success(let image):
-                                        image
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 200 , height: .infinity)
-                                            .cornerRadius(15)
-                                    case .failure:
-                                        Image(systemName: "photo")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: .infinity, height: 150)
-                                            .foregroundColor(.gray)
-                                    @unknown default:
-                                        EmptyView()
-                                    }
-                                }.padding(.horizontal)
-                                Spacer()
-                                Text("cool car description")
-                                    .padding(.horizontal)
-                            }
+                            
+                            
+                            cartileBody(imageURL: imageURL)
+                            
+                            Divider()
+                                .padding(.top,1)
+                                .padding(.horizontal)
+                            Text(car.date)
+                                .opacity(0.8)
+                                .font(.caption)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                                .padding(.horizontal)
                         }
                     )
             }

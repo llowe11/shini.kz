@@ -7,23 +7,23 @@ struct ContentView: View {
             TabView{
                 homescreen()
                     .tabItem {
-                        Label("homepage",systemImage: "house.fill")
+                        Label("шины.kz",systemImage: "house.fill")
                     }
                 favouritesScreen()
                     .tabItem {
-                        Label("favourites",systemImage: "heart")
+                        Label("избранное",systemImage: "heart")
                     }
                 addcarscreen()
                     .tabItem {
-                        Label("add",systemImage: "plus.circle")
+                        Label("подать",systemImage: "plus.circle")
                     }
                 messagesscreen()
                     .tabItem {
-                        Label("message",systemImage: "message")
+                        Label("сообщения",systemImage: "message")
                     }
                 profilescreen()
                     .tabItem {
-                        Label("profile",systemImage: "person.circle.fill")
+                        Label("кабинет",systemImage: "person.circle.fill")
                     }
             }.tint(Color.black)
         }
