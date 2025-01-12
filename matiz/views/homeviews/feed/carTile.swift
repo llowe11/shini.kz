@@ -14,7 +14,7 @@ struct carTile: View {
                                 .padding(.horizontal,10)
                                 .padding(.top)
                             HStack{
-                                Text("\(car.carprice)")
+                                Text("\(car.carprice) $")
                                 Spacer()
                             }.padding(.leading, 21)
                             
