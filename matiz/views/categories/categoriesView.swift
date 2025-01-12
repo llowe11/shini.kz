@@ -30,7 +30,7 @@ struct categoriesView: View {
                                     
                                     Text(category.name)
                                         .font(.caption)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.black.opacity(0.75))
                                         .padding(.top, -7)
                                 }
                                 .padding(5)
