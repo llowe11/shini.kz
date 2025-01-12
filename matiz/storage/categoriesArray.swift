@@ -3,13 +3,13 @@ import Foundation
 
 var categoriesArray: [CategoriesModel] = [
     CategoriesModel(
-        name: "машины", sysicon: "car"
+        name: "машины", sysicon: "car.fill"
     ),
     CategoriesModel(
-        name: "авто от шины.kz", sysicon: "car.fill"
+        name: "авто от шины.kz", sysicon: "car"
     ),
     CategoriesModel(
-        name: "мото - техника", sysicon: "motorcycle"
+        name: "мото - техника", sysicon: "motorcycle.fill"
     ),
     CategoriesModel(
         name: "запчасти", sysicon: "gear"
@@ -18,10 +18,10 @@ var categoriesArray: [CategoriesModel] = [
         name: "коммерция", sysicon: "bus"
     ),
     CategoriesModel(
-        name: "услуги", sysicon: "gear"
+        name: "услуги", sysicon: "car.badge.gearshape.fill"
     ),
     CategoriesModel(
-        name: "водный транспорт", sysicon: "ferry"
+        name: "водный транспорт", sysicon: "ferry.fill"
     ),
     CategoriesModel(
         name: "Шины Гид", sysicon: "questionmark.circle"
