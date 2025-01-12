@@ -3,27 +3,27 @@ import Foundation
 
 var categoriesArray: [CategoriesModel] = [
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "машины", sysicon: "car"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "авто от шины.kz", sysicon: "car.fill"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "мото - техника", sysicon: "motorcycle"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "запчасти", sysicon: "gear"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "коммерция", sysicon: "bus"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "услуги", sysicon: "gear"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "водный транспорт", sysicon: "ferry"
     ),
     CategoriesModel(
-        name: "test", sysicon: "car"
+        name: "Шины Гид", sysicon: "questionmark.circle"
     ),
 ]
