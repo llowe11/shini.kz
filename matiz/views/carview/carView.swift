@@ -45,19 +45,33 @@ struct carView: View {
                     .font(.title3)
                 Divider()
 
-                Button {
-                    calculateLoan()
-                } label: {
-                    RoundedRectangle(cornerRadius: 15)
-                        .overlay {
-                            Text("Расчитать кредит")
-                                .foregroundStyle(Color.white)
-                                .font(.title3)
+                VStack{
+                    VStack{
+                        HStack{
+                            Text("Ежемесячный платеж")
+                            Spacer()
+                            Text("100000")
                         }
+                        HStack{
+                            Text("Первоначальный взнос 10%")
+                            Spacer()
+                            Text("100000")
+                        }
+                    }
+                    Button {
+                        calculateLoan()
+                    } label: {
+                        RoundedRectangle(cornerRadius: 15)
+                            .overlay {
+                                Text("Расчитать кредит")
+                                    .foregroundStyle(Color.white)
+                                    .font(.title3)
+                            }
+                    }
+                    .frame(height: 50)
+                    .foregroundStyle(Color.red)
+                    .padding(.top,30)
                 }
-                .frame(height: 50)
-                .foregroundStyle(Color.red)
-                .padding(.top,30)
             }
         }
         .padding(.horizontal)
