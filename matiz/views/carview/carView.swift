@@ -54,8 +54,10 @@ struct carView: View {
                             Text("Ежемесячный платеж")
                             Spacer()
                             Text("\(monthlyPayment ?? 0) $")
+                                .padding(5)
+                                .cornerRadius(5)
                                 .background(Color.yellow)
-                                .padding(1)
+                                
                         }
                         HStack{
                             Text("Первоначальный взнос 10%")
@@ -66,7 +68,7 @@ struct carView: View {
                     Button {
                         calculateLoan()
                     } label: {
-                        RoundedRectangle(cornerRadius: 15)
+                        RoundedRectangle(cornerRadius: 10)
                             .overlay {
                                 Text("Расчитать кредит")
                                     .foregroundStyle(Color.white)
@@ -76,6 +78,10 @@ struct carView: View {
                     .frame(height: 50)
                     .foregroundStyle(Color.red)
                     .padding(.top,10)
+                }
+                Divider().padding(.top,7)
+                VStack{
+                    Text("TODO: описание машины")
                 }
             }
         }
