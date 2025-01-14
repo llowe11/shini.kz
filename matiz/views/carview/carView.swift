@@ -50,7 +50,6 @@ struct carView: View {
 
                 VStack{
                     VStack{
-                        //todo: edit acording to the data
                         HStack{
                             Text("Ежемесячный платеж")
                             Spacer()
