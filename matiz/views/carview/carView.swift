@@ -38,15 +38,7 @@ struct carView: View {
                 }
                 .ignoresSafeArea(edges: .horizontal)
                 
-                HStack {
-                    Text(car.brand)
-                        .font(.title2)
-                    Text(car.name)
-                        .font(.title2)
-                }
-                Text("\(car.carprice) $")
-                    .font(.title3)
-                Divider()
+                carViewText(car: car)
 
                 VStack{
                     VStack{
