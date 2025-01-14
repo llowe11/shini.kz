@@ -4,7 +4,7 @@ import SwiftData
 struct carView: View {
     var car: carModel
     var body: some View {
-        let monthlyPayment: Int? = Int(car.carprice).map { $0 / 12 }
+        let monthlyPayment: Int? = Int(car.carprice).map { $0 / 60 }
         let initialPayment: Double? = Int(car.carprice).map{ Double($0) * 0.1}
         let formattedPayment = String(format: "%.0f", initialPayment ?? 0)
         let imageURL = URL(string: car.carImg)
@@ -49,7 +49,6 @@ struct carView: View {
                                 .padding(5)
                                 .cornerRadius(5)
                                 .background(Color.yellow)
-                                
                         }
                         
                         HStack{
