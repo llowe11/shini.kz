@@ -13,7 +13,11 @@ struct carloancalculatorView: View {
             } label: {
                 Text("20")
             }
-
+            Button {
+                return
+            } label: {
+                Text("10")
+            }
         }
     }
 }
