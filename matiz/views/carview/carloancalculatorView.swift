@@ -8,6 +8,11 @@ struct carloancalculatorView: View {
             } label: {
                 Text("10")
             }
+            Button {
+                return
+            } label: {
+                Text("20")
+            }
 
         }
     }
