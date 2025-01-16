@@ -2,7 +2,15 @@ import SwiftUI
 
 struct profilescreen: View {
     var body: some View {
-        Text("coming soon...")
+        ZStack{
+            ScrollView{
+                VStack{
+                    HStack{
+                        Text("name surname")
+                    }
+                }
+            }
+        }
     }
 }
 
