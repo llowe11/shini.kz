@@ -7,6 +7,7 @@ struct profilescreen: View {
                 VStack{
                     HStack{
                         Text("name surname")
+                        Text("profile image")
                     }
                 }
             }
