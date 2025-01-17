@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct motoScreen: View {
+struct newsScreen: View {
     var body: some View {
-        Text("moto")
+        Text("news")
     }
 }
 
 #Preview {
-    motoScreen()
+    newsScreen()
 }

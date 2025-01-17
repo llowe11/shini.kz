@@ -7,10 +7,15 @@ struct headerView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-                .frame(width: 230)
+                .frame(width: 165)
             
-            Text("")
-                
+            NavigationLink(destination: {
+                newsScreen()
+            }){
+                Text("новости")
+                    .foregroundStyle(Color.blue.opacity(0.8))
+                    
+            }
             
         }
         .padding()
