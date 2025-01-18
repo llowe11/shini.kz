@@ -5,7 +5,3 @@ struct motoScreen: View {
         Text("moto")
     }
 }
-
-#Preview {
-    motoScreen()
-}

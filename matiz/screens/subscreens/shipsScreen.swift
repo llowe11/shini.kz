@@ -5,7 +5,3 @@ struct shipsScreen: View {
         Text("ships")
     }
 }
-
-#Preview {
-    shipsScreen()
-}

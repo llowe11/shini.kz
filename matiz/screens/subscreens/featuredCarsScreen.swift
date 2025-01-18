@@ -5,7 +5,3 @@ struct featuredCarsScreen: View {
         Text("featured")
     }
 }
-
-#Preview {
-    featuredCarsScreen()
-}

@@ -5,7 +5,3 @@ struct commericalsScreen: View {
         Text("commericals")
     }
 }
-
-#Preview {
-    commericalsScreen()
-}

@@ -5,7 +5,3 @@ struct servicesScreen: View {
         Text("services")
     }
 }
-
-#Preview {
-    servicesScreen()
-}

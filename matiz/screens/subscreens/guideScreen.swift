@@ -6,6 +6,3 @@ struct guideScreen: View {
     }
 }
 
-#Preview {
-    guideScreen()
-}
