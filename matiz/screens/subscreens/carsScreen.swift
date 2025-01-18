@@ -2,10 +2,11 @@ import SwiftUI
 
 struct carsScreen: View {
     var body: some View {
-        Text("cars")
+        ScrollView{
+            ZStack{
+                Text("cars")
+            }
+        }
     }
 }
 
-#Preview {
-    carsScreen()
-}
