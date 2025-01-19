@@ -3,11 +3,11 @@ import SwiftData
 
 struct carView: View {
     var car: carModel
+    var monthlyPayment: Int?
+    var initialPayment: Double?
+    var formattedPayment: String
     var body: some View {
-        let monthlyPayment: Int? = Int(car.carprice).map { $0 / 60 }
-        let initialPayment: Double? = Int(car.carprice).map{ Double($0) * 0.1}
-        let formattedPayment = String(format: "%.0f", initialPayment ?? 0)
-        let imageURL = URL(string: car.carImg)
+                let imageURL = URL(string: car.carImg)
         
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
