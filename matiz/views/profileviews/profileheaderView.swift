@@ -6,6 +6,3 @@ struct profileheaderView: View {
     }
 }
 
-#Preview {
-    profileheaderView()
-}
