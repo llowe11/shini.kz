@@ -6,8 +6,8 @@ struct profilescreen: View {
             ScrollView{
                 VStack{
                     HStack{
-                        Text("name surname")
                         Text("profile image")
+                        Text("name surname")
                     }
                 }
             }
