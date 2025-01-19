@@ -16,7 +16,7 @@ struct chatheaderView: View {
         .padding()
             .foregroundColor(.black)
             .frame(maxWidth: .infinity)
-            .padding(.top, 37)
+            .padding(.top,-25)
             .background(Color.white)
     }
 }
