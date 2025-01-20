@@ -8,8 +8,9 @@ struct profileView: View {
                     HStack{
                         Text("profile image")
                         Text("name surname")
-                        Text("description")
+                        
                     }
+                    Text("description")
                 }
             }
             profileheaderView()
