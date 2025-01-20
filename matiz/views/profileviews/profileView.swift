@@ -11,6 +11,7 @@ struct profileView: View {
                         
                     }
                     Text("description")
+                    Text("history")
                 }
             }
             profileheaderView()
