@@ -15,7 +15,6 @@ struct profileView: View {
                 }
             }
             profileheaderView()
-                .padding()
         }
     }
 }
