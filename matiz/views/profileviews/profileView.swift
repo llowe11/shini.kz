@@ -2,7 +2,7 @@ import SwiftUI
 
 struct profileView: View {
     var body: some View {
-        ZStack{
+        ZStack(alignment: .top){
             ScrollView{
                 VStack{
                     HStack{
