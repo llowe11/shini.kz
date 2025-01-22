@@ -7,11 +7,11 @@ struct profileheaderView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-                .frame(width: 170)
+                .frame(width: 240)
         }
         .foregroundColor(.black)
         .frame(maxWidth: .infinity)
-        .padding(.top, 35)
+        .padding(.top, -5)
         .background(Color.white)
     }
 }
