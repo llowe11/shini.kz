@@ -7,9 +7,8 @@ struct profileheaderView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-                .frame(width: 165)
+                .frame(width: 170)
         }
-        .padding()
         .foregroundColor(.black)
         .frame(maxWidth: .infinity)
         .padding(.top, 35)
