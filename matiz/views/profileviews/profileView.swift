@@ -5,7 +5,7 @@ struct profileView: View {
         ZStack(alignment: .top){
             ScrollView{
                 VStack{
-                    Text("content")
+                    Text("coming soon ...")
                 }
             }
             profileheaderView()
