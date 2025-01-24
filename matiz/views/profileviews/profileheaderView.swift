@@ -3,7 +3,7 @@ import SwiftUI
 struct profileheaderView: View {
     var body: some View {
         HStack{
-            Text("Кабинет")
+            Text("кабинет")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
