@@ -6,7 +6,7 @@ struct profileView: View {
             ScrollView{
                 VStack(spacing: 10){
                     HStack{
-                        Circle().frame(width: 150,height: 150)
+                        Circle().frame(width: 140,height: 140)
                     }
                     HStack(spacing: 10){
                         Text("Name").font(.title3)
