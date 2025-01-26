@@ -17,6 +17,9 @@ struct profileView: View {
                         Text("rating")
                         Text("categories")
                     }
+                    VStack{
+                        Text("advertisements")
+                    }
                 }
             }.padding(.top, 80)
             profileheaderView()
