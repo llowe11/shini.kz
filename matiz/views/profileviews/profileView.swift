@@ -13,8 +13,10 @@ struct profileView: View {
                         Text("Surname").font(.title3)
                     }
                     Divider()
-                    Text("rating")
-                    Text("categories")
+                    HStack{
+                        Text("rating")
+                        Text("categories")
+                    }
                 }
             }.padding(.top, 80)
             profileheaderView()
