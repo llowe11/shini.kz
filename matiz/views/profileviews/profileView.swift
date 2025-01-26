@@ -13,6 +13,7 @@ struct profileView: View {
                         Text("Surname").font(.title3)
                     }
                     Divider()
+                    Text("rating")
                 }
             }.padding(.top, 80)
             profileheaderView()
