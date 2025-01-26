@@ -14,6 +14,7 @@ struct profileView: View {
                     }
                     Divider()
                     Text("rating")
+                    Text("categories")
                 }
             }.padding(.top, 80)
             profileheaderView()
