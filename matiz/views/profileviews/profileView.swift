@@ -9,7 +9,7 @@ struct profileView: View {
                         Circle().frame(width: 140,height: 140)
                     }
                     HStack(spacing: 10){
-                        Text("Name").font(.title3)
+                        Text("name").font(.title3)
                         Text("Surname").font(.title3)
                     }
                     Divider()
