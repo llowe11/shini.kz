@@ -18,7 +18,7 @@ struct profileView: View {
                         Text("categories")
                     }
                     VStack{
-                        Text("advertisement")
+                        Text("advertisements")
                     }
                 }
             }.padding(.top, 80)
