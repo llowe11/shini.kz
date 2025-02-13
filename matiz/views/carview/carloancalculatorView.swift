@@ -16,7 +16,7 @@ struct carloancalculatorView: View {
             Button {
                 return
             } label: {
-                Text("10")
+                Text("30")
             }
         }
     }
