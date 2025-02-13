@@ -73,7 +73,7 @@ struct carView: View {
                 }
                 Divider().padding(.top,7)
                 VStack{
-                    Text("TODO: описание машины")
+                    Text("TODO: сделать описание машины")
                 }
             }
         }
