@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct TabBarControllerWrapper: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
