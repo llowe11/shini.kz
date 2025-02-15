@@ -12,7 +12,7 @@ struct homescreen: View {
                         carfeedView()
                         
                     }
-                    .padding(.top, 115)
+                    .padding(.top, 55)
                 }.scrollIndicators(.never)
                 
                 headerView()

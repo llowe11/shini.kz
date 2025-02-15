@@ -30,6 +30,7 @@ struct cartileBody: View {
             
             Text("cool car description")
                 .padding(.horizontal)
+                .foregroundStyle(Color.black)
         }
     }
 }

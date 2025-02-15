@@ -16,7 +16,7 @@ struct favouritesheaderView: View {
         .padding()
             .foregroundColor(.black)
             .frame(maxWidth: .infinity)
-            .padding(.top, 37)
+            .padding(.top, -22)
             .background(Color.white)
     }
 }
