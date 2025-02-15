@@ -57,7 +57,7 @@ class MainTabBarController: UITabBarController {
 
         viewControllers = [homeVC, favouritesVC, addCarVC, messagesVC, profileVC]
         
-        tabBar.tintColor = UIColor.black.withAlphaComponent(0.65)  
+        tabBar.tintColor = UIColor.label.withAlphaComponent(0.65)  
 
     }
 }
