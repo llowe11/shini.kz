@@ -19,7 +19,8 @@ class MainTabBarController: UITabBarController {
         tabBar.backgroundColor = .white
 
     
-        tabBarController?.additionalSafeAreaInsets.bottom = -20
+        tabBarController?.additionalSafeAreaInsets.bottom = -25
+        
         let homeVC = UIHostingController(rootView: homescreen())
         homeVC.tabBarItem = UITabBarItem(
             title: "шины.kz",
