@@ -70,7 +70,7 @@ struct profileView: View {
                                         .foregroundColor(.gray)
                                 }
                                 .padding()
-                                .background(Color(.systemgray6))
+                                .background(Color(.systemGray6))
                                 .cornerRadius(10)
                             }
                         }

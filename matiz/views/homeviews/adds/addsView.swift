@@ -1,19 +1,21 @@
 import SwiftUI
 
 struct addsView: View {
-    var body: some View {
-        ScrollView(.horizontal){
-            HStack{
-                ForEach(addsArray, id: \.id){add in
-                    addTile(add: add)
-                }
-            }
-        }.scrollIndicators(.hidden)
-            .padding(.leading,10)
-            
-    }
-}
+    @State private var showTempScreen = false
 
-#Preview {
-    addsView()
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(addsArray, id: \.id) { add in
+                    addTile(add: add)
+                        .onTapGesture {
+                            showTempScreen = true
+                        }
+                }
+            }.padding(.leading, 10)
+        }
+        .fullScreenCover(isPresented: $showTempScreen) {
+            tempScreen()
+        }
+    }
 }

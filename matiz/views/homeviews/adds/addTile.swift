@@ -6,13 +6,12 @@ struct addTile: View {
         RoundedRectangle(cornerRadius: 20)
             .fill(Color.blue.opacity(0.17))
             .stroke(Color.blue.opacity(0.3), lineWidth: 2.5)
-            .frame(width: 90,height: 90)
+            .frame(width: 90, height: 90)
             .overlay(
-                VStack{
-                    Text(add.image)
+                VStack {
+                    Text(add.name)
+                        .foregroundColor(.black)
                 }
             )
-
     }
 }
-
