@@ -23,7 +23,7 @@ struct tempScreen: View {
 
                 Spacer()
 
-                Text("Story Content Here")
+                Text("Story")
                     .foregroundColor(.white)
                     .font(.title)
 
